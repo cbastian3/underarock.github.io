@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Downloads/Learning Three.js"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Clean Learning Three.js"
+	}
+}
