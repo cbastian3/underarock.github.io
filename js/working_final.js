@@ -16,7 +16,7 @@ let analyser = new THREE.AudioAnalyser( audio, fftSize );
 
 //sphere_one
 var geometry = new THREE.SphereGeometry( 5, 5, 25 );
-var material = new THREE.MeshLambertMaterial( { color: 0x4AB1DC, opacity:0.5, transparent:true, wireframe:true, emissive: 0x00ff00,emissiveIntensity:0.6} );
+var material = new THREE.MeshLambertMaterial( { color: "0000FF", opacity:0.5, transparent:true, wireframe:true, emissive: 0x0000FF,emissiveIntensity:0.6} );
 var sphere_one = new THREE.Mesh( geometry, material );
 var group = new THREE.Group();
 
@@ -166,6 +166,21 @@ function play_audio3() {
   mediaElement3.play();
   audio.setMediaElementSource( mediaElement3 );
 }
+function play_audio4() {
+
+  mediaElement1.play();
+  audio.setMediaElementSource( mediaElement1 );
+}
+function play_audio5() {
+
+  mediaElement2.play();
+  audio.setMediaElementSource( mediaElement2 );
+}
+function play_audio6() {
+
+  mediaElement3.play();
+  audio.setMediaElementSource( mediaElement3 );
+}
 
 function loadModels() {
 
@@ -279,6 +294,9 @@ function render() {
                      })
 
                         sphere_one.geometry.verticesNeedUpdate = true;
+
+                        // camera.position += avg;
+
 
 
                   //    textGeo.geometry.vertices.forEach(function(i){
