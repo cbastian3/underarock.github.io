@@ -21,33 +21,6 @@ var group = new THREE.Group();
 //text
 var load2 = new THREE.FontLoader();
 
-
-
-//font from fundamentals
-// const loader = new THREE.FontLoader();
-
-// var load2 = new THREE.FontLoader();
-
-// load2.load( 'js/THREE.js-master/src/examples/fonts/helvetiker_regular.typeface.json', function ( font ) {
-// 	var textGeo = new THREE.TextGeometry( "Take Time", {
-//         font: font,
-//         size: 2,
-//         height: 2,
-//         curveSegments: 21,
-//         bevelEnabled: false
-//     } );
-
-//     var textMaterial = new THREE.MeshPhongMaterial( { color: 0xdddddd } );
-//     var mesh = new THREE.Mesh( textGeo, textMaterial );
-
-
-// let analyser
-
-//play button brought in from visualizer2.html
-// var startButton = document.getElementById( 'startBtn' );
-// startButton.addEventListener( 'click', play_audio );
-
-//add material name here first
 let newMaterial, Standard, newStandard;
 
 const mixers = [];
@@ -124,30 +97,7 @@ function createMaterials(){
 
 
       
-        //font from fundamentals
 
-  // loader.load('js/THREE.js-master/src/examples/fonts/helvetiker_regular.typeface.json', (font) => {
-  //   const text = 'take time';  
-  
-  
-  //   const geometry = new THREE.TextBufferGeometry(text, {
-  //     font: font,
-  //     size:  500,  
-  
-  //     height:  1.0,  
-  
-  //     curveSegments:  1,  
-  
-  //     bevelEnabled: true,  
-  //     bevelThickness: 1.49,  
-  
-  //     bevelSize: 0.10,  
-  
-  //     bevelSegments: 2,  
-  
-  //   });
-    
-  // });
 //from Reddit
 
 load2.load( 'js/THREE.js-master/src/examples/fonts/helvetiker_regular.typeface.json', function ( font ) {
