@@ -42,7 +42,7 @@ function init() {
   createSkybox();
   createRenderer();
 
-  play_audio(); 
+  // play_audio(); 
 
   renderer.setAnimationLoop( () => {
 
