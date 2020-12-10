@@ -12,6 +12,11 @@ let audio = new THREE.Audio( listener );
 let mediaElement1 = new Audio( 'audio/Modular1Rhodes_1.mp3' );
 let mediaElement2 = new Audio( 'audio/Modular2Synth_1.mp3' );
 let mediaElement3 = new Audio( 'audio/Modular3RhodesChorus_1.mp3' );
+let mediaElement4 = new Audio( 'audio/Modular1Rhodes_1.mp3' );
+let mediaElement5 = new Audio( 'audio/Modular2Synth_1.mp3' );
+let mediaElement6 = new Audio( 'audio/Modular3RhodesChorus_1.mp3' );
+
+
 let analyser = new THREE.AudioAnalyser( audio, fftSize );
 
 //sphere_one
@@ -168,18 +173,18 @@ function play_audio3() {
 }
 function play_audio4() {
 
-  mediaElement1.play();
-  audio.setMediaElementSource( mediaElement1 );
+  mediaElement4.play();
+  audio.setMediaElementSource( mediaElement4 );
 }
 function play_audio5() {
 
-  mediaElement2.play();
-  audio.setMediaElementSource( mediaElement2 );
+  mediaElement5.play();
+  audio.setMediaElementSource( mediaElement5 );
 }
 function play_audio6() {
 
-  mediaElement3.play();
-  audio.setMediaElementSource( mediaElement3 );
+  mediaElement6.play();
+  audio.setMediaElementSource( mediaElement6 );
 }
 
 function loadModels() {
