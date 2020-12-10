@@ -9,7 +9,9 @@ let scene;
 let fftSize = 128;
 let listener = new THREE.AudioListener();
 let audio = new THREE.Audio( listener );
-let mediaElement = new Audio( 'audio/ItCouldHappenToYou.mp3' );
+let mediaElement1 = new Audio( 'audio/Modular1Rhodes_1.mp3' );
+let mediaElement2 = new Audio( 'audio/Modular2Synth_1.mp3' );
+let mediaElement3 = new Audio( 'audio/Modular3RhodesChorus_1.mp3' );
 let analyser = new THREE.AudioAnalyser( audio, fftSize );
 
 //sphere_one
@@ -149,10 +151,20 @@ load2.load( 'js/THREE.js-master/src/examples/fonts/helvetiker_regular.typeface.j
 
 }
 
-function play_audio() {
+function play_audio1() {
 
-  mediaElement.play();
-  audio.setMediaElementSource( mediaElement );
+  mediaElement1.play();
+  audio.setMediaElementSource( mediaElement1 );
+}
+function play_audio2() {
+
+  mediaElement2.play();
+  audio.setMediaElementSource( mediaElement2 );
+}
+function play_audio3() {
+
+  mediaElement3.play();
+  audio.setMediaElementSource( mediaElement3 );
 }
 
 function loadModels() {
@@ -259,7 +271,7 @@ function render() {
                     // group.rotation.y += avg/900;
 
                      sphere_one.geometry.vertices.forEach(function(i){
-                         var noisy = noise.simplex3(i.x,i.y,i.z)*0.00005;
+                         var noisy = noise.simplex3(i.x,i.y,i.z)*0.00003;
                          i.x+=noisy*avg;
                          i.y+=noisy*avg;
                          i.z+=noisy*avg;
