@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
 
-<!--<link rel="icon" href="https://discoverthreejs.com/favicon.ico" type="image/x-icon"> -->
-
+    <!-- css stylesheet -->
     <link href="styles/main.css" rel="stylesheet" type="text/css">    <!--
 
       Include the main three.js script.
@@ -21,6 +20,14 @@
     -->
 
     <script src="js/THREE.js-master/build/three.min.js"></script>
+
+    <!--
+
+    Include the GLTFLoader script. This also needs to be loaded after the three.js script
+
+    -->
+
+  <script src="js/THREE.js-master/src/examples/js/loaders/GLTFLoader.js"></script>
     <!--
 
     Include the OrbitControls script.
@@ -28,14 +35,7 @@
     This must be included AFTER the three.js script as it
     needs to use the global THREE variable
 
-  -->
-
-  <script src="js/THREE.js-master/src/examples/js/loaders/GLTFLoader.js"></script>
-  <!--
-
-    Include the GLTFLoader script. This also needs to be loaded after the three.js script
-
-  -->
+    -->
 
   <script src="js/THREE.js-master/src/examples/js/controls/OrbitControls.js"></script>
 
@@ -46,31 +46,24 @@
     })
   </script>
 
-//noise stuff
+  <!-- allows access to noise this n that in order to make the vertices update and such -->
   <script type="text/javascript" src="https://cdn.rawgit.com/josephg/noisejs/master/perlin.js"></script>
 
 
   </head>
 
   <body>
-    <div>
-      
-    </div>
-    <br>
-    <div>
-      
-    </div>
-    <br>
-    <div id="level1">
-   <h1><button class=button onclick="play_audio1()" type="button">1</button></h1> <br> 
-   <h1><button onclick="play_audio2()" type="button">2</button></h1> <br>
-   <h1><button onclick="play_audio3()" type="button">3</button></h1> <br>
-   <h1><button onclick="play_audio4()" type="button">4</button></h1> <br> 
-   <h1><button onclick="play_audio5()" type="button">5</button></h1> <br>
-   <h1><button onclick="play_audio6()" type="button">6</button></h1> <br>
-   </div>
-    <!-- <h1><a href="https://www.threejs.com/">Index: Table of Contents</a></h1> -->
-    <br>
+
+   <div id="level1">
+    <h1><button onclick="play_audio1()" type="button">1</button></h1> <br> 
+    <h1><button onclick="play_audio2()" type="button">2</button></h1> <br>
+    <h1><button onclick="play_audio3()" type="button">3</button></h1> <br>
+    <h1><button onclick="play_audio4()" type="button">4</button></h1> <br> 
+    <h1><button onclick="play_audio5()" type="button">5</button></h1> <br>
+    <h1><button onclick="play_audio6()" type="button">6</button></h1> <br>
+  </div>
+
+  <br>
 
 
      <div id="scene-container">
